@@ -22,7 +22,7 @@ namespace Bitcoin_address_generator
 		public static Thread lastThread;
 		public static int prefixLength;
 
-		static string bech32_CHARS = "023456789acdefghjklmnpqrstuvwxyz"; // mahni 1
+		static string bech32_CHARS = "023456789acdefghjklmnpqrstuvwxyz"; 
 
 		 static Network net = Network.Main;
 
@@ -80,7 +80,6 @@ namespace Bitcoin_address_generator
 				key1 = new Key();
 				var secret = new BitcoinSecret(key1, net);
 				var addr = secret.GetAddress(ScriptPubKeyType.Segwit);
-				//var addr = key1.PubKey.GetAddress(net);
 
 				address = addr.ToString();
 
@@ -98,12 +97,6 @@ namespace Bitcoin_address_generator
 					isShuttingDown = true;
 					privkey1 = key1.GetWif(net).ToString();
 					Console.Clear();
-					/*Console.WriteLine();
-				    Console.WriteLine("prefix:" + prefix);
-			     	Console.WriteLine();
-					Console.WriteLine("Address: " + address);
-					Console.WriteLine("Private Key: " + privkey1);
-					Console.WriteLine("It took " + triesCounter * 6 + " tries to find this address."); */
 					lastThread = new Thread(() => ShowDetails(prefix, address, privkey1, triesCounter));
 					lastThread.Start();
 					StopThreads();
@@ -186,7 +179,7 @@ namespace Bitcoin_address_generator
 			t5.Abort();
 		}
 
-		static bool isPrefixValid(string prefix)  // 02
+		static bool isPrefixValid(string prefix)
 		{
 			int validationCounter = 0;
 
