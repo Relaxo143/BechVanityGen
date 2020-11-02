@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bitcoin address generator", "Bitcoin address generator.csproj", "{19AB763F-56C2-4C97-9852-2E3462C6003F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19AB763F-56C2-4C97-9852-2E3462C6003F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19AB763F-56C2-4C97-9852-2E3462C6003F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19AB763F-56C2-4C97-9852-2E3462C6003F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19AB763F-56C2-4C97-9852-2E3462C6003F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E2457B1-8167-49B7-BFD7-C80049FE7CAB}
+	EndGlobalSection
+EndGlobal
